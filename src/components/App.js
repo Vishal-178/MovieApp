@@ -1,9 +1,10 @@
 import React from "react";
+import { connect } from "react-redux";
 import {data} from '../data';
 import Navbar from './Navbar';
 import MovieCard from "./MovieCard";
 import {addMovies, setShowFavourite} from '../actions';
-import {StoreContext, connect} from '../index';
+// import {StoreContext, connect} from '../index';
 class App extends React.Component {
   componentDidMount(){
     this.props.dispatch(addMovies(data));
@@ -51,15 +52,15 @@ class App extends React.Component {
   }
 }
 
-class AppWrapper extends React.Component{
-  render(){
-    return(
-      <StoreContext.Consumer>
-        {(store)=><App store={store}/>}
-      </StoreContext.Consumer>
-    );
-  }
-}
+// class AppWrapper extends React.Component{
+//   render(){
+//     return(
+//       <StoreContext.Consumer>
+//         {(store)=><App store={store}/>}
+//       </StoreContext.Consumer>
+//     );
+//   }
+// }
 function mapStateToProps(state){
   return{
     movies:state.movies,

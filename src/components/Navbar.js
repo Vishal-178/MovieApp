@@ -1,6 +1,5 @@
 import React from "react";
-import { connect, StoreContext } from "..";
-// import {data}  from '../data';
+import { connect } from "react-redux";
 import{ addMovieToList, handleMovieSearch } from '../actions';
 
 

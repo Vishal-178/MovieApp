@@ -1,4 +1,5 @@
-
+In this project we can search any movie using OMDB API and add it to movie list, after adding to movie list, we can add that move to favourite list and we can Un favourite it.
+### Folder Structure
 ```
 movie-app
 ├─ .git
@@ -27,3 +28,10 @@ movie-app
       └─ index.js
 
 ```
+## Project Screenshots
+
+![Alt text](githubRedme/1.png)
+![Alt text](githubRedme/2.png)
+![Alt text](githubRedme/3.png)
+![Alt text](githubRedme/4.png)
+![Alt text](githubRedme/5.png)
